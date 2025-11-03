@@ -163,12 +163,6 @@ export const TransparencyReport = () => {
           </Card>
         </div>
 
-        <div className="mt-12 text-center">
-          <p className="text-sm text-muted-foreground">
-            All metrics independently audited by PricewaterhouseCoopers Kenya. 
-            <br />Complete audit reports available to qualified clients upon NDA execution.
-          </p>
-        </div>
       </div>
     </section>
   );
