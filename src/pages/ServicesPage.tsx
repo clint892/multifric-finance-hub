@@ -1,23 +1,28 @@
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Card } from "@/components/ui/card";
-import { Gem, Building2, BadgeCheck, FileCheck, Shield, Briefcase } from "lucide-react";
+import { Gem, Building2, BadgeCheck, Award, Shield, Briefcase, TrendingUp, FileText, DollarSign, Building, AlertTriangle } from "lucide-react";
 import serviceMinerals from "@/assets/service-minerals.jpg";
 import serviceGovernment from "@/assets/service-government.jpg";
 import serviceGuarantees from "@/assets/service-guarantees.jpg";
-import serviceDiligence from "@/assets/service-diligence.jpg";
+import servicePerformanceBonds from "@/assets/service-performance-bonds.jpg";
 import serviceEscrow from "@/assets/service-escrow.jpg";
+import serviceWealth from "@/assets/service-wealth.jpg";
 import serviceAdvisory from "@/assets/service-advisory.jpg";
+import servicePlanning from "@/assets/service-planning.jpg";
+import serviceAssets from "@/assets/service-assets.jpg";
+import serviceCorporate from "@/assets/service-corporate.jpg";
+import serviceRisk from "@/assets/service-risk.jpg";
 
 const services = [
   {
     icon: Gem,
     image: serviceMinerals,
     title: "Mineral Investment Facilitation",
-    description: "Connecting global investors with lucrative opportunities in Africa's mineral sector, with a special focus on gold and precious metals.",
+    description: "Connecting investors with lucrative opportunities in the mineral sector, including gold, diamonds, and rare earth elements.",
     features: [
       "Due diligence on mineral assets and sellers",
-      "Escrow services for secure transactions",
+      "Deal structuring and negotiation support",
       "Market analysis and valuation",
       "Anti-fraud verification processes"
     ]
@@ -26,60 +31,120 @@ const services = [
     icon: Building2,
     image: serviceGovernment,
     title: "Government Project Financing",
-    description: "Securing financing for critical infrastructure and development projects across multiple sectors.",
+    description: "Securing financing for critical infrastructure and development projects through PPPs, syndicated loans, and bond issuances.",
     features: [
-      "Project evaluation and structuring",
-      "Capital raising and investor matching",
-      "Financial advisory services",
-      "Risk assessment and mitigation"
+      "Infrastructure development financing",
+      "Public-private partnerships",
+      "International capital markets access",
+      "National development program support"
     ]
   },
   {
     icon: BadgeCheck,
     image: serviceGuarantees,
-    title: "Bank Guarantees & Bonds",
-    description: "Facilitating the issuance of various types of bank guarantees to ensure secure deals and contractual obligations.",
+    title: "Bank Guarantees",
+    description: "Facilitating the issuance of bid bonds, advance payment guarantees, and financial guarantees through our network of financial institutions.",
     features: [
-      "Performance guarantees",
-      "Bid bonds and advance payment guarantees",
-      "Financial guarantee arrangements",
-      "Credit enhancement solutions"
+      "Bid bonds for tender submissions",
+      "Advance payment guarantees",
+      "Financial guarantees",
+      "Global reach through correspondent banking"
     ]
   },
   {
-    icon: FileCheck,
-    image: serviceDiligence,
-    title: "Due Diligence Services",
-    description: "Comprehensive verification and background checks to protect clients from fraud and ensure transaction integrity.",
+    icon: Award,
+    image: servicePerformanceBonds,
+    title: "Performance Bonds",
+    description: "Arranging performance bonds to assure contractual obligations are met, providing financial protection for all parties.",
     features: [
-      "Seller and buyer verification",
-      "Asset authentication",
-      "Legal and compliance checks",
-      "Financial background analysis"
+      "Construction project bonds",
+      "Supply contract guarantees",
+      "Service agreement protection",
+      "Large-scale procurement bonds"
     ]
   },
   {
     icon: Shield,
     image: serviceEscrow,
-    title: "Escrow & Paymaster Services",
-    description: "Neutral third-party services to hold and disburse funds, ensuring secure and transparent transactions.",
+    title: "Paymaster & Escrow Services",
+    description: "Secure third-party holding for funds and assets during complex transactions, with transparent communication and robust security.",
     features: [
-      "Secure fund holding",
-      "Milestone-based disbursements",
-      "Transaction monitoring",
-      "Dispute resolution support"
+      "Mergers and acquisitions escrow",
+      "Real estate transaction security",
+      "International trade facilitation",
+      "Litigation settlement handling"
+    ]
+  },
+  {
+    icon: TrendingUp,
+    image: serviceWealth,
+    title: "Wealth Management",
+    description: "Personalized strategies for growing and preserving wealth through comprehensive financial planning and expert advisory.",
+    features: [
+      "Investment planning and management",
+      "Retirement planning services",
+      "Estate planning strategies",
+      "Tax optimization solutions"
     ]
   },
   {
     icon: Briefcase,
     image: serviceAdvisory,
     title: "Investment Advisory",
-    description: "Strategic guidance for investors seeking opportunities in African markets, with focus on minerals and infrastructure.",
+    description: "Expert guidance for strategic investment decisions with insightful market analysis and personalized recommendations.",
     features: [
-      "Market entry strategies",
+      "Portfolio diversification strategies",
+      "Market analysis and insights",
+      "Risk-adjusted investment planning",
+      "Alternative asset evaluation"
+    ]
+  },
+  {
+    icon: FileText,
+    image: servicePlanning,
+    title: "Financial Planning",
+    description: "Holistic financial roadmaps covering budgeting, debt management, insurance needs, and retirement strategies.",
+    features: [
+      "Comprehensive budget planning",
+      "Debt management strategies",
+      "Education funding solutions",
+      "Path to financial independence"
+    ]
+  },
+  {
+    icon: DollarSign,
+    image: serviceAssets,
+    title: "Asset Management",
+    description: "Professional management of diverse asset portfolios for high-net-worth individuals, institutions, and corporations.",
+    features: [
       "Portfolio optimization",
-      "Risk management consulting",
-      "Partnership facilitation"
+      "Risk-adjusted return strategies",
+      "Global market analysis",
+      "Capital preservation and growth"
+    ]
+  },
+  {
+    icon: Building,
+    image: serviceCorporate,
+    title: "Corporate Finance",
+    description: "Strategic financial solutions including M&A advisory, capital raising, restructuring, and valuation services.",
+    features: [
+      "Mergers and acquisitions advisory",
+      "Capital raising solutions",
+      "Corporate restructuring",
+      "Business valuation services"
+    ]
+  },
+  {
+    icon: AlertTriangle,
+    image: serviceRisk,
+    title: "Risk Management",
+    description: "Identifying and mitigating financial risks including market, credit, operational, and liquidity risks.",
+    features: [
+      "Comprehensive risk assessment",
+      "Market risk mitigation",
+      "Credit risk management",
+      "Operational risk strategies"
     ]
   }
 ];
