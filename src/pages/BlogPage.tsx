@@ -1,5 +1,6 @@
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
+import { CTA } from "@/components/CTA";
 import { Card } from "@/components/ui/card";
 import { Calendar, User } from "lucide-react";
 
@@ -102,6 +103,8 @@ const BlogPage = () => {
           </div>
         </div>
       </section>
+
+      <CTA />
 
       <Footer />
     </div>
