@@ -52,6 +52,9 @@ export const Navigation = () => {
               <Link to="/why-choose-us" className="text-foreground/70 hover:text-accent transition-colors font-medium">
                 Why Choose Us
               </Link>
+              <Link to="/team" className="text-foreground/70 hover:text-accent transition-colors font-medium">
+                Team
+              </Link>
               <Link to="/blog" className="text-foreground/70 hover:text-accent transition-colors font-medium">
                 Blog
               </Link>
@@ -95,6 +98,9 @@ export const Navigation = () => {
               </Link>
               <Link to="/why-choose-us" className="text-foreground hover:text-accent transition-colors font-medium py-2">
                 Why Choose Us
+              </Link>
+              <Link to="/team" className="text-foreground hover:text-accent transition-colors font-medium py-2">
+                Team
               </Link>
               <Link to="/blog" className="text-foreground hover:text-accent transition-colors font-medium py-2">
                 Blog
