@@ -160,44 +160,6 @@ const TeamPage = () => {
         </div>
       </section>
 
-      {/* Advisory Board */}
-      <section className="py-24 bg-secondary/30">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-foreground mb-4">Advisory Board</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Supported by leading industry experts and former government officials
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              {
-                name: "Hon. Prof. David Nalo",
-                title: "Former Cabinet Secretary, Ministry of Mining",
-                expertise: "Government Relations & Policy"
-              },
-              {
-                name: "Dr. Sarah Kimani",
-                title: "Former Director, Central Bank of Kenya",
-                expertise: "Monetary Policy & Banking Regulation"
-              },
-              {
-                name: "Robert Mensah",
-                title: "Former Regional Director, African Development Bank",
-                expertise: "Infrastructure Financing"
-              }
-            ].map((advisor, index) => (
-              <Card key={index} className="p-6 border-border bg-card text-center">
-                <h3 className="text-lg font-bold text-card-foreground mb-2">{advisor.name}</h3>
-                <p className="text-sm text-accent mb-2">{advisor.title}</p>
-                <p className="text-xs text-muted-foreground">{advisor.expertise}</p>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <Footer />
     </div>
   );
