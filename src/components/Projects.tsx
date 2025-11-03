@@ -1,10 +1,13 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, TrendingUp, Target, Rocket } from "lucide-react";
+import { ArrowRight, TrendingUp, Target, Rocket, Sun, Heart, Sprout } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import projectGoldMining from "@/assets/project-gold-mining.jpg";
 import projectInfrastructure from "@/assets/project-infrastructure.jpg";
 import projectMinerals from "@/assets/project-minerals.jpg";
+import projectSolar from "@/assets/project-solar.jpg";
+import projectHealthcare from "@/assets/project-healthcare.jpg";
+import projectAgribusiness from "@/assets/project-agribusiness.jpg";
 
 const projects = [
   {
@@ -27,6 +30,27 @@ const projects = [
     title: "Precious Minerals Export Deal - Uganda",
     description: "Facilitated a secure minerals export transaction between Ugandan suppliers and European buyers. Conducted full seller verification, mineral authentication, and provided paymaster services throughout the transaction.",
     impact: "Completed $3.8 million transaction with zero fraud incidents. Established ongoing trade relationship generating $15M+ in annual export value and creating jobs in the mining sector."
+  },
+  {
+    icon: Sun,
+    image: projectSolar,
+    title: "Solar Energy Project Financing - Rwanda",
+    description: "Structured and secured $18 million financing for a 20MW solar power plant in Rwanda. Connected government agencies with international renewable energy investors and provided comprehensive due diligence on technical specifications and land rights.",
+    impact: "Project now provides clean electricity to 50,000+ households, reducing carbon emissions by 15,000 tons annually. Created 300 construction jobs and 25 permanent positions for local communities."
+  },
+  {
+    icon: Heart,
+    image: projectHealthcare,
+    title: "Healthcare Facility Development - Ethiopia",
+    description: "Facilitated $12 million investment for construction of a modern 150-bed hospital in Addis Ababa. Managed escrow services, coordinated between government health ministry and private investors, ensuring compliance with healthcare infrastructure standards.",
+    impact: "Facility opened serving 200,000+ patients annually. Reduced regional healthcare access time by 60% and created 180 healthcare jobs including doctors, nurses, and administrative staff."
+  },
+  {
+    icon: Sprout,
+    image: projectAgribusiness,
+    title: "Agribusiness Processing Facility - Zambia",
+    description: "Secured $8 million financing for a grain processing and storage facility. Conducted market analysis, verified supplier networks, and structured investment terms between agricultural cooperatives and international agribusiness investors.",
+    impact: "Facility processes 50,000 tons of grain annually, directly benefiting 2,000+ smallholder farmers. Reduced post-harvest losses by 40% and increased farmer incomes by an average of 35%."
   }
 ];
 
