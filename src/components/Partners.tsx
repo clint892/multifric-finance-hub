@@ -1,5 +1,10 @@
 import { Card } from "@/components/ui/card";
-import { Shield, Award, Building2, Scale, Lock, FileCheck } from "lucide-react";
+import { Shield, Award, Building2, Scale } from "lucide-react";
+import certISO9001 from "@/assets/cert-iso-9001.jpg";
+import certISO27001 from "@/assets/cert-iso-27001.jpg";
+import certAMLKYC from "@/assets/cert-aml-kyc.jpg";
+import certFCA from "@/assets/cert-fca.jpg";
+import certificationsShowcase from "@/assets/certifications.jpg";
 
 export const Partners = () => {
   const partnerships = [
@@ -27,24 +32,28 @@ export const Partners = () => {
 
   const certifications = [
     {
-      icon: FileCheck,
+      image: certISO9001,
       title: "ISO 9001:2015",
-      description: "Quality Management Systems"
+      description: "Quality Management Systems",
+      verifyLink: "#"
     },
     {
-      icon: Lock,
+      image: certISO27001,
       title: "ISO 27001:2013",
-      description: "Information Security"
+      description: "Information Security",
+      verifyLink: "#"
     },
     {
-      icon: Shield,
+      image: certAMLKYC,
       title: "AML/KYC Compliance",
-      description: "Anti-Money Laundering"
+      description: "Anti-Money Laundering",
+      verifyLink: "#"
     },
     {
-      icon: Award,
+      image: certFCA,
       title: "FCA Regulated",
-      description: "Financial Conduct Authority"
+      description: "Financial Conduct Authority",
+      verifyLink: "#"
     }
   ];
 
@@ -91,23 +100,42 @@ export const Partners = () => {
               Compliance & Certifications
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Meeting the highest standards of financial services compliance
+              Independently verified and regularly audited certifications
             </p>
           </div>
 
+          {/* Certification Showcase Banner */}
+          <div className="mb-12 rounded-xl overflow-hidden border-2 border-accent/20 shadow-xl">
+            <img 
+              src={certificationsShowcase} 
+              alt="Complete certification portfolio"
+              className="w-full h-auto"
+            />
+          </div>
+
+          {/* Individual Certification Badges */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {certifications.map((cert, index) => (
               <Card 
                 key={index} 
-                className="p-6 border-border bg-card text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+                className="p-6 border-border bg-card text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group cursor-pointer"
               >
                 <div className="flex justify-center mb-4">
-                  <div className="bg-success/10 p-4 rounded-full">
-                    <cert.icon className="h-8 w-8 text-success" />
-                  </div>
+                  <img 
+                    src={cert.image} 
+                    alt={cert.title}
+                    className="w-32 h-32 object-contain group-hover:scale-110 transition-transform duration-300"
+                  />
                 </div>
                 <h3 className="text-lg font-bold text-card-foreground mb-2">{cert.title}</h3>
-                <p className="text-sm text-muted-foreground">{cert.description}</p>
+                <p className="text-sm text-muted-foreground mb-3">{cert.description}</p>
+                <a 
+                  href={cert.verifyLink} 
+                  className="text-xs text-accent hover:underline flex items-center justify-center gap-1"
+                >
+                  <Shield className="h-3 w-3" />
+                  Verify Certificate
+                </a>
               </Card>
             ))}
           </div>
@@ -115,7 +143,7 @@ export const Partners = () => {
           <div className="mt-12 text-center">
             <p className="text-sm text-muted-foreground">
               All certifications are independently verified and regularly audited. 
-              <br />Annual compliance reports available upon request.
+              <br />Annual compliance reports and audit documentation available upon request.
             </p>
           </div>
         </div>
