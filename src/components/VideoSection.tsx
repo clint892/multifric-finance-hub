@@ -72,12 +72,6 @@ export const VideoSection = () => {
             </Card>
           ))}
         </div>
-
-        <div className="mt-12 text-center">
-          <p className="text-muted-foreground">
-            All videos feature actual team members and real operations footage. No stock imagery or actors.
-          </p>
-        </div>
       </div>
     </section>
   );
