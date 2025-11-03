@@ -1,33 +1,111 @@
 import { Button } from "@/components/ui/button";
-import { Menu } from "lucide-react";
+import { Menu, Phone, Mail, MapPin, X } from "lucide-react";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export const Navigation = () => {
-  return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
-      <div className="container mx-auto px-6">
-        <div className="flex items-center justify-between h-20">
-          <div className="text-2xl font-bold text-foreground">
-            MultiFric<span className="text-accent">Capital</span>
-          </div>
-          
-          <div className="hidden md:flex items-center gap-8">
-            <a href="#about" className="text-foreground/70 hover:text-foreground transition-colors">
-              About
-            </a>
-            <a href="#focus" className="text-foreground/70 hover:text-foreground transition-colors">
-              Investment Focus
-            </a>
-            <a href="#portfolio" className="text-foreground/70 hover:text-foreground transition-colors">
-              Portfolio
-            </a>
-            <Button variant="default">Contact Us</Button>
-          </div>
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-          <Button variant="ghost" size="icon" className="md:hidden">
-            <Menu className="h-6 w-6" />
-          </Button>
+  return (
+    <>
+      {/* Top Bar */}
+      <div className="bg-primary text-primary-foreground py-2 text-sm">
+        <div className="container mx-auto px-6 flex flex-wrap justify-between items-center gap-2">
+          <div className="flex flex-wrap gap-4">
+            <a href="tel:+254208100092" className="flex items-center gap-1 hover:text-accent transition-colors">
+              <Phone className="h-3 w-3" />
+              +254 208 100 092
+            </a>
+            <a href="mailto:info@multifriccapital.com" className="flex items-center gap-1 hover:text-accent transition-colors">
+              <Mail className="h-3 w-3" />
+              info@multifriccapital.com
+            </a>
+          </div>
+          <div className="flex items-center gap-1 text-primary-foreground/80">
+            <MapPin className="h-3 w-3" />
+            Westcom Point Building, Westlands, Nairobi
+          </div>
         </div>
       </div>
-    </nav>
+
+      {/* Main Navigation */}
+      <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur-md border-b border-border shadow-sm">
+        <div className="container mx-auto px-6">
+          <div className="flex items-center justify-between h-20">
+            <Link to="/" className="text-2xl font-bold text-foreground">
+              MULTIFRIC <span className="text-accent">CAPITAL</span>
+            </Link>
+            
+            <div className="hidden lg:flex items-center gap-8">
+              <Link to="/" className="text-foreground/70 hover:text-accent transition-colors font-medium">
+                Home
+              </Link>
+              <Link to="/about" className="text-foreground/70 hover:text-accent transition-colors font-medium">
+                About Us
+              </Link>
+              <Link to="/services" className="text-foreground/70 hover:text-accent transition-colors font-medium">
+                Services
+              </Link>
+              <Link to="/projects" className="text-foreground/70 hover:text-accent transition-colors font-medium">
+                Projects
+              </Link>
+              <Link to="/why-choose-us" className="text-foreground/70 hover:text-accent transition-colors font-medium">
+                Why Choose Us
+              </Link>
+              <Link to="/blog" className="text-foreground/70 hover:text-accent transition-colors font-medium">
+                Blog
+              </Link>
+              <Link to="/faq" className="text-foreground/70 hover:text-accent transition-colors font-medium">
+                FAQ
+              </Link>
+              <Link to="/contact">
+                <Button variant="success">Contact Us</Button>
+              </Link>
+            </div>
+
+            <Button 
+              variant="ghost" 
+              size="icon" 
+              className="lg:hidden"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            >
+              {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </Button>
+          </div>
+        </div>
+
+        {/* Mobile Menu */}
+        {mobileMenuOpen && (
+          <div className="lg:hidden border-t border-border bg-background">
+            <div className="container mx-auto px-6 py-4 flex flex-col gap-4">
+              <Link to="/" className="text-foreground hover:text-accent transition-colors font-medium py-2">
+                Home
+              </Link>
+              <Link to="/about" className="text-foreground hover:text-accent transition-colors font-medium py-2">
+                About Us
+              </Link>
+              <Link to="/services" className="text-foreground hover:text-accent transition-colors font-medium py-2">
+                Services
+              </Link>
+              <Link to="/projects" className="text-foreground hover:text-accent transition-colors font-medium py-2">
+                Projects
+              </Link>
+              <Link to="/why-choose-us" className="text-foreground hover:text-accent transition-colors font-medium py-2">
+                Why Choose Us
+              </Link>
+              <Link to="/blog" className="text-foreground hover:text-accent transition-colors font-medium py-2">
+                Blog
+              </Link>
+              <Link to="/faq" className="text-foreground hover:text-accent transition-colors font-medium py-2">
+                FAQ
+              </Link>
+              <Link to="/contact">
+                <Button variant="success" className="w-full">Contact Us</Button>
+              </Link>
+            </div>
+          </div>
+        )}
+      </nav>
+    </>
   );
 };

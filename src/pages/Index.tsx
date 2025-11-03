@@ -1,8 +1,10 @@
 import { Navigation } from "@/components/Navigation";
 import { Hero } from "@/components/Hero";
 import { About } from "@/components/About";
-import { FocusAreas } from "@/components/FocusAreas";
-import { Contact } from "@/components/Contact";
+import { Services } from "@/components/Services";
+import { Projects } from "@/components/Projects";
+import { Testimonials } from "@/components/Testimonials";
+import { CTA } from "@/components/CTA";
 import { Footer } from "@/components/Footer";
 
 const Index = () => {
@@ -11,8 +13,10 @@ const Index = () => {
       <Navigation />
       <Hero />
       <About />
-      <FocusAreas />
-      <Contact />
+      <Services />
+      <Projects />
+      <Testimonials />
+      <CTA />
       <Footer />
     </div>
   );

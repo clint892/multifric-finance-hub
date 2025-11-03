@@ -49,7 +49,7 @@ export const Contact = () => {
                     className="min-h-[150px]"
                   />
                 </div>
-                <Button variant="hero" size="lg" className="w-full">
+                <Button variant="success" size="lg" className="w-full">
                   Send Message
                 </Button>
               </form>
@@ -59,17 +59,17 @@ export const Contact = () => {
               <div className="bg-card p-6 rounded-lg border border-border">
                 <Mail className="h-6 w-6 text-accent mb-3" />
                 <h3 className="font-semibold text-card-foreground mb-2">Email</h3>
-                <p className="text-muted-foreground">contact@multifriccapital.com</p>
+                <p className="text-muted-foreground">info@multifriccapital.com</p>
               </div>
               <div className="bg-card p-6 rounded-lg border border-border">
                 <Phone className="h-6 w-6 text-accent mb-3" />
                 <h3 className="font-semibold text-card-foreground mb-2">Phone</h3>
-                <p className="text-muted-foreground">+1 (555) 123-4567</p>
+                <p className="text-muted-foreground">+254 208 100 092</p>
               </div>
               <div className="bg-card p-6 rounded-lg border border-border">
                 <MapPin className="h-6 w-6 text-accent mb-3" />
                 <h3 className="font-semibold text-card-foreground mb-2">Office</h3>
-                <p className="text-muted-foreground">New York, NY</p>
+                <p className="text-muted-foreground">Westcom Point Building, Westlands, Nairobi</p>
               </div>
             </div>
           </div>
