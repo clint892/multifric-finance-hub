@@ -20,19 +20,19 @@ export const CTA = () => {
               variant="success" 
               size="lg" 
               className="text-lg w-full sm:w-auto"
-              onClick={() => navigate('/contact')}
+              onClick={() => navigate('/get-started')}
             >
-              Contact Our Team Today
+              Get Started Today
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
             <Button 
               variant="outline" 
               size="lg" 
               className="text-lg w-full sm:w-auto bg-white/10 text-white border-white/30 hover:bg-white/20"
-              onClick={() => navigate('/about')}
+              onClick={() => navigate('/contact')}
             >
               <BookOpen className="mr-2 h-5 w-5" />
-              Learn More About Us
+              Contact Our Team
             </Button>
           </div>
         </div>

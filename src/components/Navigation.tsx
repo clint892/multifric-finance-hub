@@ -58,8 +58,11 @@ export const Navigation = () => {
               <Link to="/faq" className="text-foreground/70 hover:text-accent transition-colors font-medium">
                 FAQ
               </Link>
+              <Link to="/get-started">
+                <Button variant="success">Get Started</Button>
+              </Link>
               <Link to="/contact">
-                <Button variant="success">Contact Us</Button>
+                <Button variant="outline">Contact</Button>
               </Link>
             </div>
 
@@ -99,8 +102,11 @@ export const Navigation = () => {
               <Link to="/faq" className="text-foreground hover:text-accent transition-colors font-medium py-2">
                 FAQ
               </Link>
+              <Link to="/get-started">
+                <Button variant="success" className="w-full">Get Started</Button>
+              </Link>
               <Link to="/contact">
-                <Button variant="success" className="w-full">Contact Us</Button>
+                <Button variant="outline" className="w-full">Contact</Button>
               </Link>
             </div>
           </div>

@@ -30,9 +30,9 @@ export const Hero = () => {
                 variant="success" 
                 size="lg" 
                 className="text-lg w-full sm:w-auto"
-                onClick={() => navigate('/services')}
+                onClick={() => navigate('/get-started')}
               >
-                Explore Opportunities
+                Get Started Now
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
               <a href="https://wa.me/254208100092" target="_blank" rel="noopener noreferrer">
