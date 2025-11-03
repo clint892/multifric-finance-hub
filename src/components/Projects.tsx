@@ -6,21 +6,21 @@ import { Link } from "react-router-dom";
 const projects = [
   {
     icon: TrendingUp,
-    title: "Corporate Debt Restructuring for Apex Manufacturing",
-    description: "Provided comprehensive financial advisory services to Apex Manufacturing, guiding them through a complex debt restructuring process to optimize their capital structure and ensure long-term viability.",
-    impact: "Successfully reduced Apex Manufacturing's debt burden by 30% and improved their credit rating, leading to enhanced operational liquidity and renewed investor confidence."
+    title: "Gold Mining Investment Facilitation - Tanzania",
+    description: "Connected international investors with a verified gold mining operation in Tanzania, conducting comprehensive due diligence on the mine's reserves, licensing, and operational capacity. Provided escrow services to ensure secure transaction completion.",
+    impact: "Facilitated a $5.2 million investment deal with complete fraud protection. The mine increased production by 40% within 18 months, delivering strong returns to investors while supporting local employment."
   },
   {
     icon: Target,
-    title: "Strategic Investment Portfolio Optimization for HNWI",
-    description: "Developed and implemented tailored investment strategies for a high-net-worth individual, focusing on diversification and risk-adjusted returns across various asset classes.",
-    impact: "Achieved a 15% annualized return on investment for the client, significantly outperforming market benchmarks while maintaining a balanced risk profile."
+    title: "Infrastructure Project Financing - Kenya",
+    description: "Secured financing for a major road infrastructure project in Kenya by connecting government agencies with international development banks. Structured the financing package and facilitated bank guarantee issuance.",
+    impact: "Successfully raised $25 million in project financing. The 45km road project is now improving connectivity for over 100,000 residents and boosting regional trade."
   },
   {
     icon: Rocket,
-    title: "Growth Capital Funding for InnovateTech Startup",
-    description: "Facilitated a Series B funding round for InnovateTech, a promising AI-driven startup, connecting them with strategic investors and securing the necessary capital for their expansion plans.",
-    impact: "Secured $10 million in growth capital, enabling InnovateTech to scale operations, launch new products, and increase their market share by 25% within the first year."
+    title: "Precious Minerals Export Deal - Uganda",
+    description: "Facilitated a secure minerals export transaction between Ugandan suppliers and European buyers. Conducted full seller verification, mineral authentication, and provided paymaster services throughout the transaction.",
+    impact: "Completed $3.8 million transaction with zero fraud incidents. Established ongoing trade relationship generating $15M+ in annual export value and creating jobs in the mining sector."
   }
 ];
 
