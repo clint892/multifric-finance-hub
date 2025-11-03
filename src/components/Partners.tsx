@@ -9,16 +9,6 @@ import certificationsShowcase from "@/assets/certifications.jpg";
 export const Partners = () => {
   const partnerships = [
     {
-      icon: Building2,
-      title: "Banking Partners",
-      partners: ["Standard Bank", "Barclays Africa", "Equity Bank", "KCB Group"]
-    },
-    {
-      icon: Scale,
-      title: "Legal Partners",
-      partners: ["Anjarwalla & Khanna", "Bowmans Law", "IMMMA Advocates"]
-    },
-    {
       icon: Award,
       title: "Industry Associations",
       partners: ["African Mining Vision", "EAC Trade Council", "Kenya Bankers Association"]
@@ -67,7 +57,7 @@ export const Partners = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {partnerships.map((category, index) => (
               <Card key={index} className="p-6 border-border bg-card">
                 <div className="flex items-center gap-3 mb-4">
