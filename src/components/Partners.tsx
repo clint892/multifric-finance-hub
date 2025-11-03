@@ -34,26 +34,22 @@ export const Partners = () => {
     {
       image: certISO9001,
       title: "ISO 9001:2015",
-      description: "Quality Management Systems",
-      verifyLink: "#"
+      description: "Quality Management Systems"
     },
     {
       image: certISO27001,
       title: "ISO 27001:2013",
-      description: "Information Security",
-      verifyLink: "#"
+      description: "Information Security"
     },
     {
       image: certAMLKYC,
       title: "AML/KYC Compliance",
-      description: "Anti-Money Laundering",
-      verifyLink: "#"
+      description: "Anti-Money Laundering"
     },
     {
       image: certFCA,
       title: "FCA Regulated",
-      description: "Financial Conduct Authority",
-      verifyLink: "#"
+      description: "Financial Conduct Authority"
     }
   ];
 
@@ -118,7 +114,7 @@ export const Partners = () => {
             {certifications.map((cert, index) => (
               <Card 
                 key={index} 
-                className="p-6 border-border bg-card text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group cursor-pointer"
+                className="p-6 border-border bg-card text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group"
               >
                 <div className="flex justify-center mb-4">
                   <img 
@@ -128,14 +124,7 @@ export const Partners = () => {
                   />
                 </div>
                 <h3 className="text-lg font-bold text-card-foreground mb-2">{cert.title}</h3>
-                <p className="text-sm text-muted-foreground mb-3">{cert.description}</p>
-                <a 
-                  href={cert.verifyLink} 
-                  className="text-xs text-accent hover:underline flex items-center justify-center gap-1"
-                >
-                  <Shield className="h-3 w-3" />
-                  Verify Certificate
-                </a>
+                <p className="text-sm text-muted-foreground">{cert.description}</p>
               </Card>
             ))}
           </div>
