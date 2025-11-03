@@ -2,10 +2,17 @@ import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Gem, Building2, BadgeCheck, FileCheck, Shield, Briefcase } from "lucide-react";
+import serviceMinerals from "@/assets/service-minerals.jpg";
+import serviceGovernment from "@/assets/service-government.jpg";
+import serviceGuarantees from "@/assets/service-guarantees.jpg";
+import serviceDiligence from "@/assets/service-diligence.jpg";
+import serviceEscrow from "@/assets/service-escrow.jpg";
+import serviceAdvisory from "@/assets/service-advisory.jpg";
 
 const services = [
   {
     icon: Gem,
+    image: serviceMinerals,
     title: "Mineral Investment Facilitation",
     description: "Connecting global investors with lucrative opportunities in Africa's mineral sector, with a special focus on gold and precious metals.",
     features: [
@@ -17,6 +24,7 @@ const services = [
   },
   {
     icon: Building2,
+    image: serviceGovernment,
     title: "Government Project Financing",
     description: "Securing financing for critical infrastructure and development projects across multiple sectors.",
     features: [
@@ -28,6 +36,7 @@ const services = [
   },
   {
     icon: BadgeCheck,
+    image: serviceGuarantees,
     title: "Bank Guarantees & Bonds",
     description: "Facilitating the issuance of various types of bank guarantees to ensure secure deals and contractual obligations.",
     features: [
@@ -39,6 +48,7 @@ const services = [
   },
   {
     icon: FileCheck,
+    image: serviceDiligence,
     title: "Due Diligence Services",
     description: "Comprehensive verification and background checks to protect clients from fraud and ensure transaction integrity.",
     features: [
@@ -50,6 +60,7 @@ const services = [
   },
   {
     icon: Shield,
+    image: serviceEscrow,
     title: "Escrow & Paymaster Services",
     description: "Neutral third-party services to hold and disburse funds, ensuring secure and transparent transactions.",
     features: [
@@ -61,6 +72,7 @@ const services = [
   },
   {
     icon: Briefcase,
+    image: serviceAdvisory,
     title: "Investment Advisory",
     description: "Strategic guidance for investors seeking opportunities in African markets, with focus on minerals and infrastructure.",
     features: [
@@ -98,28 +110,37 @@ const ServicesPage = () => {
             {services.map((service, index) => (
               <Card 
                 key={index}
-                className="p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-border bg-card"
+                className="overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-border bg-card"
               >
-                <div className="flex items-start gap-6">
-                  <div className="w-16 h-16 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
-                    <service.icon className="h-8 w-8 text-accent" />
+                {/* Service Image */}
+                <div className="relative h-56 overflow-hidden">
+                  <img 
+                    src={service.image} 
+                    alt={service.title}
+                    className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent" />
+                  <div className="absolute bottom-4 left-4 w-14 h-14 rounded-lg bg-accent flex items-center justify-center shadow-lg">
+                    <service.icon className="h-7 w-7 text-white" />
                   </div>
-                  <div className="flex-1">
-                    <h3 className="text-2xl font-semibold text-card-foreground mb-3">
-                      {service.title}
-                    </h3>
-                    <p className="text-muted-foreground leading-relaxed mb-4">
-                      {service.description}
-                    </p>
-                    <ul className="space-y-2">
-                      {service.features.map((feature, idx) => (
-                        <li key={idx} className="flex items-start gap-2 text-sm text-muted-foreground">
-                          <span className="text-accent mt-1">✓</span>
-                          {feature}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
+                </div>
+                
+                {/* Service Content */}
+                <div className="p-8">
+                  <h3 className="text-2xl font-semibold text-card-foreground mb-3">
+                    {service.title}
+                  </h3>
+                  <p className="text-muted-foreground leading-relaxed mb-4">
+                    {service.description}
+                  </p>
+                  <ul className="space-y-2">
+                    {service.features.map((feature, idx) => (
+                      <li key={idx} className="flex items-start gap-2 text-sm text-muted-foreground">
+                        <span className="text-accent mt-1">✓</span>
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </Card>
             ))}
