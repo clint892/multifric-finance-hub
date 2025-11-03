@@ -11,7 +11,7 @@ import teamLegal from "@/assets/team-legal.jpg";
 const TeamPage = () => {
   const teamMembers = [
     {
-      name: "Dr. James Mwangi",
+      name: "Dr. Wycliffe Kamau",
       title: "Chief Executive Officer & Founder",
       image: teamCEO,
       bio: "25+ years of experience in international finance and African investment. Former VP at Standard Bank's Investment Banking Division. Led over $2B in cross-border transactions.",
@@ -23,7 +23,7 @@ const TeamPage = () => {
       ],
       experience: "Previously held senior positions at Barclays Africa and Deutsche Bank, specializing in infrastructure and mineral financing.",
       linkedin: "#",
-      email: "j.mwangi@multifriccapital.com"
+      email: "w.kamau@multifriccapital.com"
     },
     {
       name: "Grace Ochieng",
