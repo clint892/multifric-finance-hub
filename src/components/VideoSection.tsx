@@ -6,7 +6,7 @@ export const VideoSection = () => {
   const videos = [
     {
       title: "CEO Message: Our Commitment to Transparency",
-      description: "Dr. James Mwangi discusses our mission to eliminate fraud and facilitate secure African investments.",
+      description: "Dr. Wycliffe Kamau discusses our mission to eliminate fraud and facilitate secure African investments.",
       thumbnail: officeTour,
       duration: "3:45",
       icon: Users

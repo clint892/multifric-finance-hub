@@ -37,7 +37,7 @@ const BookConsultationPage = () => {
 
   const teamMembers = [
     {
-      name: "Dr. James Mwangi",
+      name: "Dr. Wycliffe Kamau",
       title: "CEO - International Finance Expert",
       image: teamCEO,
       expertise: "Best for: Large-scale mineral deals, infrastructure projects $25M+"
