@@ -55,11 +55,20 @@ export const Navigation = () => {
               <Link to="/team" className="text-foreground/70 hover:text-accent transition-colors font-medium">
                 Team
               </Link>
+              <Link to="/security" className="text-foreground/70 hover:text-accent transition-colors font-medium">
+                Security
+              </Link>
+              <Link to="/due-diligence" className="text-foreground/70 hover:text-accent transition-colors font-medium">
+                Due Diligence
+              </Link>
               <Link to="/blog" className="text-foreground/70 hover:text-accent transition-colors font-medium">
                 Blog
               </Link>
               <Link to="/faq" className="text-foreground/70 hover:text-accent transition-colors font-medium">
                 FAQ
+              </Link>
+              <Link to="/book-consultation">
+                <Button variant="success">Book Consultation</Button>
               </Link>
               <Link to="/get-started">
                 <Button variant="success">Get Started</Button>
@@ -102,11 +111,20 @@ export const Navigation = () => {
               <Link to="/team" className="text-foreground hover:text-accent transition-colors font-medium py-2">
                 Team
               </Link>
+              <Link to="/security" className="text-foreground hover:text-accent transition-colors font-medium py-2">
+                Security
+              </Link>
+              <Link to="/due-diligence" className="text-foreground hover:text-accent transition-colors font-medium py-2">
+                Due Diligence
+              </Link>
               <Link to="/blog" className="text-foreground hover:text-accent transition-colors font-medium py-2">
                 Blog
               </Link>
               <Link to="/faq" className="text-foreground hover:text-accent transition-colors font-medium py-2">
                 FAQ
+              </Link>
+              <Link to="/book-consultation">
+                <Button variant="success" className="w-full">Book Consultation</Button>
               </Link>
               <Link to="/get-started">
                 <Button variant="success" className="w-full">Get Started</Button>

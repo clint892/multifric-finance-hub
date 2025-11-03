@@ -14,6 +14,54 @@ export type Database = {
   }
   public: {
     Tables: {
+      consultation_bookings: {
+        Row: {
+          company: string | null
+          created_at: string
+          deal_size: string
+          email: string
+          id: string
+          message: string | null
+          name: string
+          phone: string | null
+          preferred_date: string
+          preferred_time: string
+          status: string
+          team_member: string
+          updated_at: string
+        }
+        Insert: {
+          company?: string | null
+          created_at?: string
+          deal_size: string
+          email: string
+          id?: string
+          message?: string | null
+          name: string
+          phone?: string | null
+          preferred_date: string
+          preferred_time: string
+          status?: string
+          team_member: string
+          updated_at?: string
+        }
+        Update: {
+          company?: string | null
+          created_at?: string
+          deal_size?: string
+          email?: string
+          id?: string
+          message?: string | null
+          name?: string
+          phone?: string | null
+          preferred_date?: string
+          preferred_time?: string
+          status?: string
+          team_member?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
       project_assessments: {
         Row: {
           company: string | null

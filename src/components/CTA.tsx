@@ -29,7 +29,7 @@ export const CTA = () => {
               variant="outline" 
               size="lg" 
               className="text-lg w-full sm:w-auto bg-white/10 text-white border-white/30 hover:bg-white/20"
-              onClick={() => navigate('/contact')}
+              onClick={() => navigate('/book-consultation')}
             >
               <ArrowRight className="mr-2 h-5 w-5" />
               Schedule Consultation

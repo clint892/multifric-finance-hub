@@ -10,6 +10,7 @@ import { Partners } from "@/components/Partners";
 import { VideoSection } from "@/components/VideoSection";
 import { Testimonials } from "@/components/Testimonials";
 import { Press } from "@/components/Press";
+import { TransparencyReport } from "@/components/TransparencyReport";
 import { CTA } from "@/components/CTA";
 import { Footer } from "@/components/Footer";
 
@@ -28,6 +29,7 @@ const Index = () => {
       <VideoSection />
       <Testimonials />
       <Press />
+      <TransparencyReport />
       <CTA />
       <Footer />
     </div>

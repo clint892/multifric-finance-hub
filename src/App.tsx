@@ -10,6 +10,9 @@ import ProjectsPage from "./pages/ProjectsPage";
 import WhyChooseUsPage from "./pages/WhyChooseUsPage";
 import GetStartedPage from "./pages/GetStartedPage";
 import TeamPage from "./pages/TeamPage";
+import SecurityPage from "./pages/SecurityPage";
+import DueDiligencePage from "./pages/DueDiligencePage";
+import BookConsultationPage from "./pages/BookConsultationPage";
 import BlogPage from "./pages/BlogPage";
 import FAQPage from "./pages/FAQPage";
 import ContactPage from "./pages/ContactPage";
@@ -33,6 +36,9 @@ const App = () => (
           <Route path="/why-choose-us" element={<WhyChooseUsPage />} />
           <Route path="/get-started" element={<GetStartedPage />} />
           <Route path="/team" element={<TeamPage />} />
+          <Route path="/security" element={<SecurityPage />} />
+          <Route path="/due-diligence" element={<DueDiligencePage />} />
+          <Route path="/book-consultation" element={<BookConsultationPage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/faq" element={<FAQPage />} />
           <Route path="/contact" element={<ContactPage />} />
