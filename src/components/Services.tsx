@@ -1,7 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Gem, Building2, BadgeCheck } from "lucide-react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const services = [
   {
@@ -22,6 +22,8 @@ const services = [
 ];
 
 export const Services = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="py-24 bg-secondary/30">
       <div className="container mx-auto px-6">
@@ -56,12 +58,10 @@ export const Services = () => {
         </div>
 
         <div className="text-center">
-          <Link to="/services">
-            <Button variant="success" size="lg">
-              View All Services
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-          </Link>
+          <Button variant="success" size="lg" onClick={() => navigate('/services')}>
+            View All Services
+            <ArrowRight className="ml-2 h-5 w-5" />
+          </Button>
         </div>
       </div>
     </section>

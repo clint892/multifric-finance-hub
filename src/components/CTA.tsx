@@ -1,8 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, BookOpen } from "lucide-react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export const CTA = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="py-24 bg-gradient-to-br from-primary via-primary/95 to-accent/20 text-primary-foreground">
       <div className="container mx-auto px-6">
@@ -14,22 +16,24 @@ export const CTA = () => {
             Join global investors and African partners who trust MULTIFRIC CAPITAL LIMITED to bridge opportunities across minerals and government projects.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/contact">
-              <Button variant="success" size="lg" className="text-lg w-full sm:w-auto">
-                Contact Our Team Today
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-            </Link>
-            <Link to="/about">
-              <Button 
-                variant="outline" 
-                size="lg" 
-                className="text-lg w-full sm:w-auto bg-white/10 text-white border-white/30 hover:bg-white/20"
-              >
-                <BookOpen className="mr-2 h-5 w-5" />
-                Learn More About Us
-              </Button>
-            </Link>
+            <Button 
+              variant="success" 
+              size="lg" 
+              className="text-lg w-full sm:w-auto"
+              onClick={() => navigate('/contact')}
+            >
+              Contact Our Team Today
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="text-lg w-full sm:w-auto bg-white/10 text-white border-white/30 hover:bg-white/20"
+              onClick={() => navigate('/about')}
+            >
+              <BookOpen className="mr-2 h-5 w-5" />
+              Learn More About Us
+            </Button>
           </div>
         </div>
       </div>

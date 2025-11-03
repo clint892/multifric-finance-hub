@@ -1,7 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, TrendingUp, Target, Rocket } from "lucide-react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import projectGoldMining from "@/assets/project-gold-mining.jpg";
 import projectInfrastructure from "@/assets/project-infrastructure.jpg";
 import projectMinerals from "@/assets/project-minerals.jpg";
@@ -31,6 +31,8 @@ const projects = [
 ];
 
 export const Projects = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="py-24 bg-background">
       <div className="container mx-auto px-6">
@@ -81,12 +83,10 @@ export const Projects = () => {
         </div>
 
         <div className="text-center">
-          <Link to="/projects">
-            <Button variant="success" size="lg">
-              View All Projects
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-          </Link>
+          <Button variant="success" size="lg" onClick={() => navigate('/projects')}>
+            View All Projects
+            <ArrowRight className="ml-2 h-5 w-5" />
+          </Button>
         </div>
       </div>
     </section>
