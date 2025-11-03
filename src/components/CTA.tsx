@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, BookOpen } from "lucide-react";
+import { ArrowRight, BookOpen, Rocket } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 export const CTA = () => {
@@ -22,8 +22,8 @@ export const CTA = () => {
               className="text-lg w-full sm:w-auto"
               onClick={() => navigate('/get-started')}
             >
-              Get Started Today
-              <ArrowRight className="ml-2 h-5 w-5" />
+              <Rocket className="mr-2 h-5 w-5" />
+              Get Started Now
             </Button>
             <Button 
               variant="outline" 
@@ -31,8 +31,8 @@ export const CTA = () => {
               className="text-lg w-full sm:w-auto bg-white/10 text-white border-white/30 hover:bg-white/20"
               onClick={() => navigate('/contact')}
             >
-              <BookOpen className="mr-2 h-5 w-5" />
-              Contact Our Team
+              <ArrowRight className="mr-2 h-5 w-5" />
+              Schedule Consultation
             </Button>
           </div>
         </div>
