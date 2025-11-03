@@ -54,7 +54,7 @@ const SecurityPage = () => {
     "Real-time transaction monitoring by compliance team",
     "KYC verification of all parties (individuals and corporate entities)",
     "Independent geological surveys for mineral deals",
-    "Legal title verification by partner law firms",
+    "Legal title verification by our legal team",
     "Government authorization confirmation for all projects",
     "Sanctions screening against OFAC, EU, UN lists",
     "Beneficial ownership disclosure requirements",
@@ -270,7 +270,7 @@ const SecurityPage = () => {
                 </li>
               </ul>
               <p className="text-sm text-muted-foreground mt-6">
-                All documents reviewed by Anjarwalla & Khanna LLP. Available for download upon NDA execution.
+                All documents reviewed by our legal team. Available for download upon NDA execution.
               </p>
             </Card>
           </div>
